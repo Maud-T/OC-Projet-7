@@ -1,0 +1,31 @@
+.footer {
+    @include flex-box(column, null, center);
+    max-width: 1440px;
+    height: 209px;
+    background-color: #000000;
+    color: #FFFFFF;
+
+    &__logo {
+        width: 122px;
+        height: 39.44px;
+        margin-top: 66px;
+        @media (max-width: $breakpoint-mobile) {
+            margin-top: 62px;
+        }
+    }
+    
+    &__text {
+        @include flex-box(column, end, center);
+        margin-bottom: 29px;
+        width: 513px; 
+        height: 46px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 143%;
+
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 12px;
+            margin-bottom: 62px;
+        }
+    }
+}
