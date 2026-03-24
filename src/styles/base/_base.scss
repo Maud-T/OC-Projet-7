@@ -1,12 +1,26 @@
 // Importation de la police Montserrat depuis Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    box-sizing: border-box;
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-}
+* {box-sizing: border-box;}
 
-body {
+.body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 143%;
+    width: auto;
     max-width: 1440px;
     margin: auto;
+    @media (min-width: $breakpoint-header-footer) and (max-width: $breakpoint-page) {
+        width: auto;
+    }
+}
+
+.main-container {
+    @include flex-box(column, null, center);
+    width: auto;
+    max-width: 1240px;
+    margin: auto;
+    @media (max-width: $breakpoint-page) {
+        margin: 0 20px;
+    }
 }

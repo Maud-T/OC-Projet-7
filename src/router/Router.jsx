@@ -10,14 +10,18 @@ import Footer from "../components/Footer.jsx"
 function Router() {
     return (
         <BrowserRouter>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/accommodation/:id" element={<Accommodation />} />
-                <Route path="/about" element={<About />} />
-                <Route path="*" element={<NotFound />} />
-            </Routes>
-            <Footer />
+            <div className="body">
+                <div className="main-container">
+                    <Header />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/accommodation/:id" element={<Accommodation />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </div>
+                <Footer />
+            </div>
         </BrowserRouter>
     )
 }

@@ -1,0 +1,49 @@
+.header {
+    @include flex-box(row, space-between, center);
+    width: 100%;
+    height: 68px;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 63px;
+    @media (max-width: $breakpoint-header-footer) {
+        height: 47px;
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+
+    &__logo {
+        width: 210.32px;
+        height: 68px;
+        @media (max-width: $breakpoint-header-footer) {
+            width: 145px;
+            height: 47px;
+        }
+    }
+
+    &__nav {
+        @include flex-box(row, flex-end, center);
+        width: 309px;
+        height: 34px;
+        @media (max-width: $breakpoint-header-footer) {
+            width: 140px;
+            height: 17px;
+        }
+    }
+
+    &__nav__link {
+        @include flex-box(row, flex-end, center);
+        width: 50%;
+        color: $primary-color;
+        font-size: 24px;
+        text-decoration: none;
+        @media (max-width: $breakpoint-header-footer) {
+            @include flex-box(row, space-between, center);
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+}

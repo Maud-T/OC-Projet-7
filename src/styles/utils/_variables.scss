@@ -1,3 +1,12 @@
+// COULEURS ///////////////////////////////////////////////
 $primary-color: #ff6060;
 
+//BREAKPOINTS /////////////////////////////////////////////
 $breakpoint-mobile: 375px;
+
+//Breakpoints en fonction de la largeur des éléments 
+$breakpoint-page: 1280px; // Largeur max de la page + marges 
+$breakpoint-header-footer:  520px; 
+// Choix d'un seul breakpoint pour le header et le footer pour que les 2 changent en même temps car les valeurs sont prochent
+//$breakpoint-header:  520px; // Logo + Nav = 210.32px + 309px = 519.32px
+//$breakpoint-footer-text: 513px; // Largeur max du footer + marges
