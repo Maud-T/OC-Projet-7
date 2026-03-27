@@ -1,0 +1,42 @@
+.card {
+    position: relative;
+    height: 340px;
+    width: 100%;
+    max-width: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media screen and (max-width: $breakpoint-medium-tablet) {
+        height: 255px;
+        max-width: 100%;
+    }
+    
+    &__img {
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        object-fit: cover;
+    }
+
+    &__img--shadow {
+        @include linear-gradient;
+        position: absolute;
+        bottom: 0;
+        height: 60%;
+        width: 100%;
+        border-radius: inherit;    
+        }
+
+    &__title {
+        position: absolute;
+        bottom: 20px;
+        margin: 0 20px;
+        @include text(white, 18px, 500, 143%);
+        box-sizing: inherit;
+    }
+
+    &:hover {  
+        scale: 1.02;
+        transition : scale 500ms ease-out;
+    }
+}

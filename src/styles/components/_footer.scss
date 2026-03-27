@@ -2,6 +2,7 @@
     @include flex-box(column, null, center);
     width: 100%;
     height: 209px;
+    padding: 1rem;
     background-color: black;
     color: white;
 
@@ -9,7 +10,7 @@
         width: 122px;
         height: 39.44px;
         margin-top: 66px;
-        @media (max-width: $breakpoint-header-footer) {
+        @media screen and (max-width: $breakpoint-small) {
             margin-top: 62px;
         }
     }
@@ -19,8 +20,8 @@
         margin-bottom: 29px;
         width: 513px; 
         height: 46px;
-        font-size: 24px;
-        @media (max-width: $breakpoint-header-footer) {
+        @include text(white, 24px, 500, 143%);
+        @media screen and (max-width: $breakpoint-small) {
             font-size: 12px;
             margin-bottom: 62px;
         }

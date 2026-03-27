@@ -4,3 +4,15 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin text ($color, $size, $font-weight, $line-height) {
+    color: $color;
+    font-size: $size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    letter-spacing: 0%;
+}
+
+@mixin linear-gradient {
+    background: linear-gradient(rgba(255, 255, 255, 0), black);
+}

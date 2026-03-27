@@ -5,7 +5,7 @@
     background-color: white;
     margin-top: 40px;
     margin-bottom: 63px;
-    @media (max-width: $breakpoint-header-footer) {
+    @media screen and (max-width: $breakpoint-medium-tablet) {
         height: 47px;
         margin-top: 20px;
         margin-bottom: 16px;
@@ -14,7 +14,7 @@
     &__logo {
         width: 210.32px;
         height: 68px;
-        @media (max-width: $breakpoint-header-footer) {
+        @media screen and (max-width: $breakpoint-medium-tablet) {
             width: 145px;
             height: 47px;
         }
@@ -24,7 +24,7 @@
         @include flex-box(row, flex-end, center);
         width: 309px;
         height: 34px;
-        @media (max-width: $breakpoint-header-footer) {
+        @media screen and (max-width: $breakpoint-medium-tablet) {
             width: 140px;
             height: 17px;
         }
@@ -33,10 +33,9 @@
     &__nav__link {
         @include flex-box(row, flex-end, center);
         width: 50%;
-        color: $primary-color;
-        font-size: 24px;
+        @include text($primary-color, 24px, 500, 143%);
         text-decoration: none;
-        @media (max-width: $breakpoint-header-footer) {
+        @media screen and (max-width: $breakpoint-medium-tablet) {
             @include flex-box(row, space-between, center);
             text-transform: uppercase;
             font-size: 12px;

@@ -5,22 +5,17 @@
 
 .body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: 143%;
     width: auto;
     max-width: 1440px;
-    margin: auto;
-    @media (min-width: $breakpoint-header-footer) and (max-width: $breakpoint-page) {
-        width: auto;
-    }
+    margin: 0 auto;
 }
 
 .main-container {
     @include flex-box(column, null, center);
     width: auto;
     max-width: 1240px;
-    margin: auto;
-    @media (max-width: $breakpoint-page) {
+    margin: 0 auto;
+    @media (max-width: $breakpoint-large) {
         margin: 0 20px;
     }
 }
