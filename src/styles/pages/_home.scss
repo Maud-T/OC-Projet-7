@@ -1,0 +1,12 @@
+.home-container {
+    margin-top: 43px;
+    @media screen and (max-width: $breakpoint-medium-tablet) {
+        margin-top: 0;
+    }
+
+    & .banner {
+        @media screen and (max-width: $breakpoint-medium-tablet) {
+            height: 111px;
+        }
+    }
+}

@@ -2,9 +2,12 @@
     @include flex-box(column, null, center);
     width: 100%;
     height: 209px;
-    padding: 1rem;
+    margin-top: 43px;
     background-color: black;
     color: white;
+    @media screen and (max-width: $breakpoint-medium-tablet) {
+        margin-top: 22px;
+    }
 
     &__logo {
         width: 122px;
