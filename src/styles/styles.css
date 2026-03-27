@@ -275,7 +275,6 @@
   position: relative;
   height: 340px;
   width: 100%;
-  max-width: 340px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -287,6 +286,7 @@
 }
 .card__img {
   width: inherit;
+  max-width: inherit;
   height: inherit;
   border-radius: inherit;
   -o-object-fit: cover;
