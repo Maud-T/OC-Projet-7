@@ -1,0 +1,10 @@
+.about {
+    @include flex-box(column, null, center);
+    margin-top: 31px;
+        
+        &__collapses {
+            margin-top: 31px;
+            width: 1023px;
+            height: auto;
+    }
+}

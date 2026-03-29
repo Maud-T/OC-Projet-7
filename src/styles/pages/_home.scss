@@ -1,10 +1,11 @@
-.home-container {
+.home {
     margin-top: 43px;
     @media screen and (max-width: $breakpoint-medium-tablet) {
         margin-top: 0;
     }
 
     & .banner {
+        margin-bottom: 43px; 
         @media screen and (max-width: $breakpoint-medium-tablet) {
             height: 111px;
         }
