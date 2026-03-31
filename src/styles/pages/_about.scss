@@ -1,10 +1,15 @@
 .about {
-    @include flex-box(column, null, center);
-    margin-top: 31px;
+    @include flex-box(column, flex-start, center);
         
-        &__collapses {
-            margin-top: 31px;
-            width: 1023px;
-            height: auto;
+    &__collapses {
+        width: 100%;
+        height: auto;
+
+        &__collapse {
+            padding-top: 30px;
+            @media screen and (max-width: $breakpoint-medium-tablet) {
+                padding-top: 20px;
+            }
+        }
     }
 }

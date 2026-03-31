@@ -18,7 +18,9 @@
             width: 100%;
             max-width: 1240px;
             @include flex-box (row, space-between, none);
-            background-color: grey;
+            @media screen and (max-width: $breakpoint-medium-tablet) {
+                @include flex-box (column, flex-start, flex-start);
+            }
         }
         
         &__bottom {
@@ -26,12 +28,25 @@
             max-width: 1240px;
             @include flex-box (row, space-between, flex-start);
             margin-top: 20px;
-            background-color: blue;
+            @media screen and (max-width: $breakpoint-medium-tablet) {
+                @include flex-box (column, flex-start, center);
+
+            }
 
             &__collapse {
                 @include flex-box (row, space-between, center);
                 max-width: 1240px;
-                width: 47%,
+                width: 47%;
+                @media screen and (max-width: $breakpoint-medium-tablet) {
+                    @include flex-box (column, flex-start, center);
+                    width: 100%;
+                }
+                    
+                &__description {
+                    @media screen and (max-width: $breakpoint-medium-tablet) {                    
+                        margin-bottom: 20px;
+                    }
+                }
             }
         }
     }
@@ -39,41 +54,56 @@
 
 .titlesAndTags {
     @include flex-box (column, space-between, flex-start);
-    //width: 100%;
-            
+
     &__titles {
+        margin-bottom: 10px;
 
         h1 {
-            @include text ($primary-color, 36px, 500, 143%);            
+            @include text ($primary-color, 36px, 500, 143%);
+            @media screen and (max-width: $breakpoint-medium-tablet) {
+                font-size: 18px;
+            }
         }
-
+        
         h2 {
             @include text ($primary-color, 18px, 500, 143%);
+            @media screen and (max-width: $breakpoint-medium-tablet) {
+                font-size: 14px;
+            }
         }
     }
 
     &__tags {
-        display: flex;
-        margin-top: 10px;
+        @include flex-box (row, flex-start, center);
+        column-gap: 20px;
+        row-gap: 10px;
+        flex-wrap: wrap;
 
         &__button {
             @include flex-box (column, center, center);
-            text-align: center;
             background-color: $primary-color;
             color: white;
             @include text (white, 14px, 500, 143%);    
             white-space: nowrap;
-            border-radius: 10px;
+            border-radius: $border-radius-medium;
             height: 25px;
-            width: 100%;
-            padding: 2px 10px;
-            margin-right: 20px;
+            padding: 2px 15px;
+            @media screen and (max-width: $breakpoint-medium-tablet) {
+                border-radius: $border-radius-small;
+                height: 18px;
+                font-size: 10px;
+            }
         }
     }
 }
                
 .HostAndRating {
     @include flex-box (column, space-between, flex-end);
+    @media screen and (max-width: $breakpoint-medium-tablet) {
+        @include flex-box (row-reverse, space-between, center);
+        width: 100%;
+        margin-top: 10px;
+    }
 
     &__host {
         @include flex-box (row, row-reverse, none);
@@ -84,6 +114,9 @@
             margin-right: 10px;
             width: 93px;
             text-align: right;
+            @media screen and (max-width: $breakpoint-medium-tablet) {
+                font-size: 12px;
+            }
         }
         
         img {
@@ -91,6 +124,10 @@
             width: 64px;
             height: 64px;
             object-fit: cover;
+            @media screen and (max-width: $breakpoint-medium-tablet) {
+                width: 32px;
+                height: 32px;
+            }
         }
     }
 
@@ -99,5 +136,10 @@
         margin-top: 20px;
         width: 196px;
         height: 100%;
+        @media screen and (max-width: $breakpoint-medium-tablet) {
+            margin-top: 0;
+            width: 98px;
+            height: 18px;
+        }
     }
 }

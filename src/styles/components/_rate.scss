@@ -2,3 +2,9 @@
     @include flex-box (row, space-between, flex-end);
     width: 100%;
 }
+
+.star {
+    @media screen and (max-width: $breakpoint-medium-tablet) {
+        height: 13px;
+    }
+}

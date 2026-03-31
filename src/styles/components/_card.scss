@@ -2,7 +2,7 @@
     position: relative;
     height: 340px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: $border-radius-medium;
     overflow: hidden;
 
     @media screen and (max-width: $breakpoint-medium-tablet) {

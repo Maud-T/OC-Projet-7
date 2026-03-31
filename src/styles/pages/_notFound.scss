@@ -1,17 +1,16 @@
-
 .notFound {
     //@include flex-box(column, center, center);
     flex: 1 0 auto;
     padding: 1rem;
-    margin: 22px 22px;
+    margin: 22px 0;
     text-align: center;
     
 
     &__title {
         @include text($primary-color, 288px, 700, 143%);
         //margin-bottom: 20px;
-        margin: 12rem 0 1rem 0; //
-
+        //margin: 12rem 0 1rem 0; //
+        margin-top: 23%;
         @media (max-width: $breakpoint-small) {
             font-size: 96px;
             margin: 0; //
@@ -42,3 +41,9 @@
         }
     }
 }
+
+/*
+        @media screen and (max-width: $breakpoint-medium-tablet) {
+        
+        }
+*/

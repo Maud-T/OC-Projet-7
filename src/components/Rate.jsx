@@ -11,17 +11,17 @@ function Rate(props) {
             {notes.map((note) =>
                 score >= note ? (
                     <img
-                    key={note.toString()}
-                    className="star"
-                    src={starFull}
-                    alt="étoile positive"
+                        key={note.toString()}
+                        className="star"
+                        src={starFull}
+                        alt="étoile positive"
                     />
                     ) : (
                     <img
-                    key={note.toString()}
-                    className="star"
-                    src={starEmpty}
-                    alt="étoile vide"
+                        key={note.toString()}
+                        className="star"
+                        src={starEmpty}
+                        alt="étoile vide"
                 />
             )
         )}

@@ -41,14 +41,14 @@ function Accommodation() {
                 
                 <section className="fiche__section">
                     <div className="fiche__section__bottom">
-                        <div className="fiche__section__bottom__collapse">
+                        <div className="fiche__section__bottom__collapse fiche__section__bottom__collapse__description">
                             <Collapse 
                                 title="Description"
                                 description={dataLogements.description}
                             />
                         </div>
                         <div className="fiche__section__bottom__collapse">
-                            <Collapse 
+                            <Collapse
                                 title="Equipements"
                                 description={
                                     dataLogements.equipments.map((equipements, i) => (

@@ -3,7 +3,7 @@ import arrowLeft from "../assets/arrowLeft.png"
 import arrowRight from "../assets/arrowRight.png"
 
 function SlideShow({ slides }) {
-
+    
     const [slideIndex, setSlideIndex] = useState(0) // Définition de l'index de la 1ère photo
     const totalSlides = slides.length
     console.log("nombre de photos:", totalSlides)
@@ -27,25 +27,54 @@ function SlideShow({ slides }) {
     return (
         <section className="slideShow">
             {totalSlides > 1 && (
-                <img 
-                    classeName="slideShow__arrow__left" 
-                    src={arrowLeft} 
-                    alt="Flèche pour aller à l'image précédente" 
-                    onClick={previousSlide}/>
-            )}
-            {totalSlides > 1 && (
-                <img 
-                classeName="slideShow__arrow__right" 
-                src={arrowRight} 
-                alt="Flèche pour aller à l'image suivante" 
-                onClick={nextSlide}/>
+                <div>
+                    <img 
+                        className="slideShow__arrow slideShow__arrow__left" 
+                        src={arrowLeft} 
+                        alt="Flèche pour aller à l'image précédente" 
+                        onClick={previousSlide}
+                    />
+                    <img 
+                        className="slideShow__arrow slideShow__arrow__right" 
+                        src={arrowRight} 
+                        alt="Flèche pour aller à l'image suivante" 
+                        onClick={nextSlide}
+                    />            
+                
+                    <p className="slideShow__numbers">
+                        {slideIndex + 1}/{totalSlides}
+                    </p>
+                </div>
             )}
             <img src={slides[slideIndex]} className="slideShow__image"/>
-            <p className="slideShow__numbers">
-                {slideIndex + 1}/{totalSlides}
-            </p>
         </section>
     )
 }
 
 export default SlideShow
+
+//Si j'avais eu un compte pro Font Awesome
+
+/*
+
+            
+
+                        {totalSlides > 1 && (
+                <button 
+                    type="button"
+                    className="slideShow__arrowLeft"
+                    onClick={previousSlide}
+                    >
+                        <span><i class="fa-sharp fa-solid fa-chevron-left"></i></span>
+                </button>  
+            )}
+            {totalSlides > 1 && (
+                <button 
+                    type="button"
+                    classeName="slideShow__arrow__right"  
+                    onClick={nextSlide}
+                >
+                    <span><i class="fa-sharp fa-solid fa-chevron-right"></i></span>
+                </button>
+            )}
+*/

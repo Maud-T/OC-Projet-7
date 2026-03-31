@@ -9,10 +9,10 @@ function About() {
         <div className="about">
             <Banner image={bannerImg} />
             <div className="about__collapses">
-                <div className="about__collapses__collapse">
+                <div>
                     {aboutItems.map((item) => {
                         return (
-                            <div key={item.id}>
+                            <div key={item.id} className="about__collapses__collapse">
                                 <Collapse title={item.title} description={item.description} />
                             </div>
                         );
