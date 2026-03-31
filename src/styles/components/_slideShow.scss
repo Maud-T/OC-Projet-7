@@ -20,7 +20,7 @@
 
     &__arrow {
         position: absolute;
-        z-index: +2;
+        z-index: +1;
         opacity: 87%;    
         top: 50%;
         transform: translateY(-50%);
@@ -43,6 +43,7 @@
 
     &__numbers {
         position: absolute;
+        z-index: +1;
         transform: translateX(-50%);
         left: 50%;
         bottom: 5.5%;

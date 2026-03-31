@@ -5,7 +5,7 @@ function Collapse ({ title, description }) {
     // Etat qui indique si le contenu est ouvert
     const [isOpen, setIsOpen] = useState(false);
 
-                // Fonction qui permet d'effectuer le changement
+    // Fonction qui permet d'effectuer le changement
     const toggle = () => setIsOpen(prev => !prev);
 
     return (

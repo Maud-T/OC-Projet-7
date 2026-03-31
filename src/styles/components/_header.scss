@@ -28,21 +28,21 @@
             width: 140px;
             height: 17px;
         }
-    }
+    
+        &__link {
+            @include flex-box(row, flex-end, center);
+            width: 50%;
+            @include text($primary-color, 24px, 500, 143%);
+            text-decoration: none;
+            @media screen and (max-width: $breakpoint-medium-tablet) {
+                @include flex-box(row, space-between, center);
+                text-transform: uppercase;
+                font-size: 12px;
+            }
 
-    &__nav__link {
-        @include flex-box(row, flex-end, center);
-        width: 50%;
-        @include text($primary-color, 24px, 500, 143%);
-        text-decoration: none;
-        @media screen and (max-width: $breakpoint-medium-tablet) {
-            @include flex-box(row, space-between, center);
-            text-transform: uppercase;
-            font-size: 12px;
-        }
-
-        &:hover, &:focus {
-            text-decoration: underline;
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
         }
     }
 }

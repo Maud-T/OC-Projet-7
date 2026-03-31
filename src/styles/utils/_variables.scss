@@ -8,16 +8,16 @@ $border-radius-small: 5px;
 $border-radius-medium : 10px;
 $border-radius-large: 25px;
 
-//BREAKPOINTS /////////////////////////////////////////////
-//Breakpoints en fonction de la largeur des éléments de la page sauf pour medium
+// BREAKPOINTS /////////////////////////////////////////////
+// Certains Breakpoints définis en fonction de la largeur des éléments de la page
 $breakpoint-large: 1280px;// Largeur max de la page 1240px + marges 2*20px 
 $breakpoint-medium-desktop: 992px; // breakpoint desktop
 $breakpoint-medium-tablet: 769px; // breakpoint tablet
 $breakpoint-small: 520px; // Dans le Header, Logo + Nav = 210.32px + 309px = 519.32px
 
-//$breakpoint-mobile: 375px;
-//$breakpoint-tablet: 769px;
-//$breakpoint-desktop: 992px;
+// $breakpoint-mobile: 375px;
+// $breakpoint-tablet: 769px;
+// $breakpoint-desktop: 992px;
 
 
 

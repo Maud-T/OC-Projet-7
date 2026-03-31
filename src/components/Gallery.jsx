@@ -8,7 +8,7 @@ function Gallery() {
             {logements.map((logement) => {
                 return (
                     <article key={logement.id}>
-                        <Link to={`/Accommodation/${logement.id}`}>
+                        <Link to={`/accommodation/${logement.id}`}>
                             < Card image={logement.cover} title={logement.title} />
                         </Link>
                     </article>

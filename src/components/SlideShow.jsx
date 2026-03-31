@@ -40,7 +40,6 @@ function SlideShow({ slides }) {
                         alt="Flèche pour aller à l'image suivante" 
                         onClick={nextSlide}
                     />            
-                
                     <p className="slideShow__numbers">
                         {slideIndex + 1}/{totalSlides}
                     </p>
@@ -53,13 +52,9 @@ function SlideShow({ slides }) {
 
 export default SlideShow
 
-//Si j'avais eu un compte pro Font Awesome
-
+// Si j'avais eu un compte pro Font Awesome ...
 /*
-
-            
-
-                        {totalSlides > 1 && (
+            {totalSlides > 1 && (
                 <button 
                     type="button"
                     className="slideShow__arrowLeft"
