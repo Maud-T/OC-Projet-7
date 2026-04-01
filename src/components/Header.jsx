@@ -9,14 +9,14 @@ function Header() {
                 <NavLink 
                     to="/" 
                     className="header__nav__link"
-                    style={({ isActive }) => ({"text-decoration": isActive ? 'underline' : 'none',})}
+                    style={({ isActive }) => ({"textDecoration": isActive ? 'underline' : 'none',})}
                 >
                     Accueil
                 </NavLink>
                 <NavLink 
                     to="/about" 
                     className="header__nav__link"
-                    style={({ isActive }) => ({"text-decoration": isActive ? 'underline' : 'none',})}
+                    style={({ isActive }) => ({"textDecoration": isActive ? 'underline' : 'none',})}
                 >
                     A Propos
                 </NavLink>

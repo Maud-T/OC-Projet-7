@@ -11,6 +11,7 @@ function Accommodation() {
 
     const { id } = useParams();
     const dataLogements = data.find(logement => logement.id === id);
+    console.log(dataLogements);
 
     return (
         <div>

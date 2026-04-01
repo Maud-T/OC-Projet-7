@@ -22,7 +22,7 @@ function Collapse ({ title, description }) {
             </button>
             {isOpen && (
                 <div className="collapse__texte">
-                    <p>{description}</p>
+                    <div>{description}</div>
                 </div>
             )}
         </div>)
