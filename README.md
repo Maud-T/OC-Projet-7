@@ -1,3 +1,11 @@
+# P7 - KASA
+# Créez une application web de location immobilière avec React
+
+Pour faire fonctionner le projet : 
+
+Installer les dépendances avec "npm install"
+Lancer avec "npm run dev"
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
