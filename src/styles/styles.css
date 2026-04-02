@@ -61,6 +61,11 @@
   width: 100%;
   margin-top: 24px;
 }
+@media screen and (max-width: 769px) {
+  .fiche {
+    margin-top: 15px;
+  }
+}
 .fiche__section {
   width: 100%;
   max-width: 1240px;
@@ -156,6 +161,7 @@
 @media screen and (max-width: 769px) {
   .titlesAndTags__titles h2 {
     font-size: 14px;
+    margin-top: 5px;
   }
 }
 .titlesAndTags__tags {
@@ -167,6 +173,12 @@
        column-gap: 20px;
   row-gap: 10px;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 769px) {
+  .titlesAndTags__tags {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
 }
 .titlesAndTags__tags__button {
   display: flex;
@@ -389,7 +401,6 @@
   font-weight: 500;
   line-height: 143%;
   letter-spacing: 0%;
-  text-decoration: none;
 }
 @media screen and (max-width: 769px) {
   .header__nav__link {
@@ -400,9 +411,6 @@
     text-transform: uppercase;
     font-size: 12px;
   }
-}
-.header__nav__link:hover, .header__nav__link:focus {
-  text-decoration: underline;
 }
 
 .footer {
@@ -476,12 +484,11 @@
 }
 .banner__text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
-  text-align: center;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 48px;
   font-weight: 500;
@@ -644,6 +651,7 @@
 @media screen and (max-width: 769px) {
   .slideShow {
     height: 255px;
+    margin-top: 11px;
   }
 }
 .slideShow__image {
@@ -659,25 +667,27 @@
     border-radius: 10px;
   }
 }
-.slideShow__arrow {
+.slideShow__arrows {
   position: absolute;
   z-index: 1;
   opacity: 87%;
-  top: 50%;
-  transform: translateY(-50%);
+  inset: 0 23.36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(-50% -50%);
   cursor: pointer;
 }
 @media screen and (max-width: 769px) {
-  .slideShow__arrow {
-    height: 19.8px;
-    width: auto;
+  .slideShow__arrows {
+    inset: 0 5.84px;
   }
 }
-.slideShow__arrow__left {
-  left: 2%;
-}
-.slideShow__arrow__right {
-  right: 2%;
+@media screen and (max-width: 769px) {
+  .slideShow__arrows__arrow {
+    height: 19.8px;
+  }
 }
 .slideShow__numbers {
   position: absolute;

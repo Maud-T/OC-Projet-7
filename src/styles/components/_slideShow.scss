@@ -5,6 +5,7 @@
     height: 415px;
     @media screen and (max-width: $breakpoint-medium-tablet) {
         height: 255px;
+        margin-top: 11px;
     }
 
     &__image {
@@ -18,27 +19,26 @@
         }
     }
 
-    &__arrow {
+    &__arrows {
         position: absolute;
         z-index: +1;
-        opacity: 87%;    
-        top: 50%;
-        transform: translateY(-50%);
+        opacity: 87%;
+        //width: inherit;
+        inset: 0 23.36px; // top, right, bottom & left = 0
+        @include flex-box(row, space-between, center);    
+        //top: 50%;
+        transform: translate(-50% -50%);
         cursor: pointer;
         @media screen and (max-width: $breakpoint-medium-tablet) {
+            inset: 0 5.84px; // top, right, bottom & left = 0
+        }
+        &__arrow {
+        @media screen and (max-width: $breakpoint-medium-tablet) {
+            
             height: 19.8px;
-            width: auto;
         }
+    }
 
-        &__left {
-            left: 2%;
-            //left: 23.36px;
-        }
-
-        &__right {
-            right: 2%;
-            //right: 23.36px;
-        }
     }
 
     &__numbers {

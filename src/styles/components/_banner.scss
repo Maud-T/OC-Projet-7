@@ -21,12 +21,8 @@
     
     &__text {
         position: absolute;
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width : 100%;
-        height: auto;
-        text-align: center;
+        inset: 0; // top, right, bottom & left = 0
+        @include flex-box(column, center, center); 
         @include text(white, 48px, 500, 143%);
         @media (max-width: $breakpoint-medium-tablet) {
             top: 50%; 

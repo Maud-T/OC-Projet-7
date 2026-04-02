@@ -27,15 +27,15 @@ function SlideShow({ slides }) {
     return (
         <section className="slideShow">
             {totalSlides > 1 && (
-                <div>
+                <div className="slideShow__arrows">
                     <img 
-                        className="slideShow__arrow slideShow__arrow__left" 
+                        className=" slideShow__arrows__arrow" 
                         src={arrowLeft} 
                         alt="Flèche pour aller à l'image précédente" 
                         onClick={previousSlide}
                     />
                     <img 
-                        className="slideShow__arrow slideShow__arrow__right" 
+                        className="slideShow__arrows__arrow" 
                         src={arrowRight} 
                         alt="Flèche pour aller à l'image suivante" 
                         onClick={nextSlide}
